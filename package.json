@@ -1,0 +1,22 @@
+{
+  "name": "converter",
+  "version": "1.0.0",
+  "description": "converter",
+  "main": "convert.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "temitope",
+  "license": "ISC",
+  "dependencies": {
+    "build": "^0.1.4",
+    "express": "^4.16.3",
+    "https": "^1.0.0",
+    "node-fetch": "^2.1.2",
+    "node-require": "0.0.10"
+  },
+  "devDependencies": {
+    "start-server-and-test": "^1.5.0"
+  }
+}

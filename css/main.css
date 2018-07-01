@@ -1,0 +1,15 @@
+.responsive-image{
+    background:url("/imgs/currency.jpg") no-repeat center center fixed;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  /*padding:50px;
+  padding-top:10px;*/
+  text-align:center;
+    width: 100%;
+   
+} 

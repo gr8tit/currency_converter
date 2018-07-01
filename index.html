@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+ 
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+ <meta http-equiv="Pragma" content="no-cache">
+
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+ integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <link rel="stylesheet" href="css/main.css">
+ <title>Currency Converter</title>
+ 
+</head>
+<body>
+        <body class="responsive-image">
+                <div class="container">
+                  <div class="row justify-content-center align-items-center">
+                 
+                    <div class="col-md-3 col-sm-12">
+                      <div class="panel-group">
+                                <div class="panel panel-default">
+                                        <h4 class="panel-title">Currency&nbsp;&nbsp;Converter</h4>
+                                  
+                                    <div class="panel-body">
+                                        <form method="post" action="http://free.currencyconverterapi.com/api/v5/convert?q=">
+                                        <input TYPE="hidden" NAME="buttonClicked" SIZE="16" MAXLENGTH="15" value="0">
+                                        <input TYPE="hidden" NAME="amount" SIZE="255" MAXLENGTH="255" VALUE="">
+                                        <input TYPE="hidden" NAME="currency" SIZE="16" MAXLENGTH="15" value="0">
+                                            <fieldset>
+                                                <div class="form-group" >
+                                                    
+                                                    <input class="form-control" id = "input" placeholder="Amount" type="TEXT" name="amt" VALUE="Enter amount" required autofocus/>
+                                                </div><br>  
+                                                <div class="form-group" >
+                                                        <label>From <select id="from"> </select></label>   
+                                                </div> <br />
+                                                <div class="form-group">
+                                                        <input class="form-control" type="text" id="output" placeholder="RESULTS" disabled="disabled">
+                                                    </div>
+                                                <div class="form-group" >
+                                                        <label>To <select id="to" > </select></label>   
+                                                </div> <br />
+                                                <div class="form-group">
+                                                    <input class="btn btn-success" type="button" id = "result" name="Submit" value="Convert" onclick="getConvert()">
+                                                  
+                                                </div><br />
+                                                
+                                            </fieldset>
+                                      </form>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                  </div>
+                </div>
+   
+  <!-- Register Service Worker -->
+  <script>
+ if (!('serviceWorker' in navigator)) {
+  console.log('Service worker not supported');
+}
+navigator.serviceWorker.register('/sw/sw.js')
+.then(function() {
+  console.log('Registered');
+})
+.catch(function(error) {
+  console.log('Registration failed:', error);
+});
+    </script>
+
+
+  
+ <!-- <script src="js/currency.js"></script>-->
+ <script type="text/javascript" src="convert.js"></script>
+  <!--<script src="js/convert.js"></script>-->
+  
+</body>
+</html>
