@@ -22,7 +22,7 @@
                     <div class="col-md-3 col-sm-12">
                       <div class="panel-group">
                                 <div class="panel panel-default">
-                                        <h4 class="panel-title">Currency&nbsp;&nbsp;Converter</h4>
+                                        <h4 class="panel-title">Currency&nbsp;&nbsp;Converter </h4>
                                   
                                     <div class="panel-body">
                                         <form method="post" action="http://free.currencyconverterapi.com/api/v5/convert?q=">
@@ -32,19 +32,20 @@
                                             <fieldset>
                                                 <div class="form-group" >
                                                     
-                                                    <input class="form-control" id = "input" placeholder="Amount" type="TEXT" name="amt" VALUE="Enter amount" required autofocus/>
+                                                    <input class="form-control" id = "input" placeholder="Amount" type="TEXT" name="amt" required autofocus/>
                                                 </div><br>  
                                                 <div class="form-group" >
                                                         <label>From <select id="from"> </select></label>   
                                                 </div> <br />
-                                                <div class="form-group">
-                                                        <input class="form-control" type="text" id="output" placeholder="RESULTS" disabled="disabled">
-                                                    </div>
+                                               
                                                 <div class="form-group" >
                                                         <label>To <select id="to" > </select></label>   
                                                 </div> <br />
                                                 <div class="form-group">
-                                                    <input class="btn btn-success" type="button" id = "result" name="Submit" value="Convert" onclick="getConvert()">
+                                                    <input class="form-control" type="text" id = "result" placeholder="RESULTS" disabled="disabled">
+                                                </div><br />
+                                                <div class="form-group">
+                                                    <input class="btn btn-success" type="button" id="output" name="Submit" value="Convert" onclick="getConvert()">
                                                   
                                                 </div><br />
                                                 

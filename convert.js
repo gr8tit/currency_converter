@@ -64,7 +64,7 @@ function getConvert(amount, from, to, cb) {
 
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker
-        .register('../sw/sw.js', { scope: '/' })
+        .register('/sw/sw.js', { scope: '/sw/' })
         .then(function (registration) {
             console.log('service worker registered', registration)
         })
